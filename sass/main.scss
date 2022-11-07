@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+/*@import "./utils/placeholders";*/
+
+/*import feuille de style externes comme le normalizer*/
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layouts/container";
+@import "./layouts/form";
+@import "./layouts/header";
+@import "./layouts/nav";
+
+@import "./pages/home";
+@import "./pages/menu_la-palette-du-gout";
+@import "./pages/menu_la-note-enchantee";
+@import "./pages/menu_a-la-francaise";
+@import "./pages/menu_le-delice-des-sens";
