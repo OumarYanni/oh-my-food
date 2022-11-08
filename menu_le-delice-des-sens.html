@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--Cette balise indique l'encodage utilisé dans mon fichier. Cette méthode d'encodage permet d'afficher sans aucun problème pratiquement tous les symboles de toutes les langues de notre planète ! C'est pour cela que j'ai indiqué utf-8  dans cette balise-->
+    <meta charset="utf-8" />
+    <!--La balise meta name= "viewport" va permettre de donner des instructions relatives à la taille et à l’échelle du viewport aux navigateurs mobiles afin que les différents éléments d’une page s’affichent au mieux-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!--La liaison vers ma feuille de style normalize css-->
+    <link rel="stylesheet" href="public\css\normalize.css" />
+    <!--La liaison vers ma feuille de style css-->
+    <link rel="stylesheet" href="public\css\style.css" />
+    <!--L'intégration de FontAwesone-->
+    <script
+      src="https://kit.fontawesome.com/65ce4c8501.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Titre de la page-->
+    <title>Oh my food</title>
+  </head>
+
+  <body>
+    <header>
+      <figure>
+        <button class="header__button--backtohomepage">
+          <a href="index.html"> <i class="fa-solid fa-arrow-left"></i> </a>
+        </button>
+        <img src="public/img/logo/ohmyfood.png" alt="logo" />
+      </figure>
+    </header>
+
+    <figure>
+      <img
+        src="public/img/restaurants/le-delice-des-sens.jpg"
+        alt="background image menu_le-delice-des-sens"
+      />
+    </figure>
+
+    <section class="le-delice-des-sens">
+      Le délice des sens <i class="fa-regular fa-heart"></i>
+      <h1 class="le-delice-des-sens__title"></h1>
+      <div class="le-delice-des-sens__container">
+        <h3>Entrées</h3>
+        <div class="entries__container">
+          <div class="entries__card">
+            <h3>Tartare de thon</h3>
+            <p>Assaisonné au yuzu<span>25€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+          <div class="entries__card">
+            <h3>Bouchée de homard croustillant</h3>
+            <p>Et sa farandole de petits légumes<span>35€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+          <div class="entries__card">
+            <h3>Velouté de crèpes</h3>
+            <p>Aux truffes<span>20€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+        </div>
+
+        <h3>Plats</h3>
+        <div class="dishes__container">
+          <div class="dishes__card">
+            <h3>Poulet rôti aux herbes de Provences</h3>
+            <p>Et sa crème de truffe<span>40€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+          <div class="dishes__card">
+            <h3>Langouste rôtie</h3>
+            <p>Et ses légumes de saison<span>35€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+          <div class="dishes__card">
+            <h3>Côte de boeuf Angus</h3>
+            <p>Et sa purée de panais<span>44€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+        </div>
+
+        <h3>Desserts</h3>
+        <div class="desserts__container">
+          <div class="desserts__card">
+            <h3>Farandole de desserts</h3>
+            <p>Du chef<span>18€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+          <div class="desserts__card">
+            <h3>Crème brûlée</h3>
+            <p>Revisitée<span>22€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+          <div class="desserts__card">
+            <h3>Tiramisu</h3>
+            <p>À la noisette<span>23€</span></p>
+            <figure><i class="fa-regular fa-circle-check"></i></figure>
+          </div>
+        </div>
+        <button class="button--order">Commander</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__container">
+        <h2 class="footer__container__title">ohmyfood</h2>
+        <ul>
+          <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
+          <li>
+            <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire
+          </li>
+          <li>Mentions légales</li>
+          <li><a href="mailto:oumaryanni@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
