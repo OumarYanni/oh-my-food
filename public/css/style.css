@@ -1,4 +1,12 @@
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 900;
+}
 
 /*# sourceMappingURL=style.css.map */
