@@ -51,6 +51,12 @@ button {
   font-weight: 900;
 }
 
+a {
+  outline: none;
+  text-decoration: none;
+  color: #101010;
+}
+
 /*rajouter une mixin aprés*/
 .introduction__button {
   background-color: #9356DC;
@@ -73,6 +79,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 1px;
 }
 
 .button--green {
@@ -81,6 +89,9 @@ button {
   padding: 5px 15px;
   color: #078868;
   border-radius: 2px;
+  position: absolute;
+  right: 50px;
+  bottom: 135px;
 }
 
 .header__button--backtohomepage {
@@ -109,6 +120,56 @@ button {
   border-bottom: 3px solid #99E2D0;
   width: 25px;
   margin-left: 25px;
+}
+
+.fonctionnement__card {
+  display: flex;
+  border: 2px solid #F7F7F7;
+  border-radius: 20px;
+  padding: 15px 20px;
+  width: 70%;
+  background-color: #F7F7F7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+}
+.fonctionnement__card .fa-solid, .fonctionnement__card .fas {
+  margin: 0px 25px 0px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.restaurants__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  width: 90%;
+  height: 250px;
+  margin: 10px 0px;
+}
+.restaurants__card img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.restaurants__card__description {
+  padding: 0px 12px;
+}
+.restaurants__card__description h2 {
+  /*font-family: "Shrikhand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;*/
+  margin-bottom: 0px;
+  /*Ne pas oublier d'enlever la class card description title au HTML*/
+}
+.restaurants__card__description .fa-regular, .restaurants__card__description .far {
+  position: absolute;
+  right: 50px;
+  font-size: 30px;
+}
+.restaurants__card__description p {
+  margin: 5px 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
