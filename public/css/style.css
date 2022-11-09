@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*$box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.38);*/
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
 body {
@@ -47,7 +48,55 @@ h3 {
 button {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 900;
+}
+
+/*rajouter une mixin aprés*/
+.introduction__button {
+  background-color: #9356DC;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 2px solid #9356DC;
+  /*box-shadow: $box-shadow
+  color: $colour-white;*/
+}
+
+.card__button {
+  font-size: 12px;
+  background-color: #9356DC;
+  padding: 4px 2px 2px 2px;
+  border-radius: 100%;
+  border: 2px solid #9356DC;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--green {
+  background-color: #99E2D0;
+  border: 2px solid #99E2D0;
+  padding: 5px 15px;
+  color: #078868;
+  border-radius: 2px;
+}
+
+.header__button--backtohomepage {
+  background-color: #fff;
+  border: none;
+  color: #101010;
+  font-size: 20px;
+}
+
+.button--order {
+  background-color: #9356DC;
+  padding: 10px 40px;
+  border-radius: 30px;
+  border: 2px solid #9356DC;
+  /*box-shadow: $box-shadow
+  color: $colour-white;*/
 }
 
 .category__card {
