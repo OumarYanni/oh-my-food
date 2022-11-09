@@ -1,12 +1,65 @@
+@charset "UTF-8";
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 900;
+  font-size: 25px;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.category__card {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* créer une mixin et rajouter juste le margin left*/
+.category__card--offset {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  font-style: normal;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.category__card {
+  border-bottom: 3px solid #99E2D0;
+  width: 25px;
+}
+
+/* créer une mixin et rajouter juste le margin left*/
+.category__card--offset {
+  border-bottom: 3px solid #99E2D0;
+  width: 25px;
+  margin-left: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

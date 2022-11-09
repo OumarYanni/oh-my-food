@@ -1,0 +1,11 @@
+.category__card {
+    border-bottom: 3px solid $colour-tertiary;
+    width: 25px;   
+}
+
+/* créer une mixin et rajouter juste le margin left*/
+.category__card--offset {
+    border-bottom: 3px solid $colour-tertiary;
+    width: 25px; 
+    margin-left: 25px;  
+}
