@@ -172,4 +172,48 @@ a {
   margin: 5px 0 0 0;
 }
 
+/*Rajouter une extension pour les autres card du menus*/
+.entries__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  width: 90%;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 5px 0px 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.entries__card h3 {
+  margin: 10px 0 0 0;
+}
+.entries__card p {
+  margin: 0;
+}
+.entries__card span {
+  float: right;
+}
+.entries__card figure {
+  margin: 0;
+  position: relative;
+  border: 2px solid #99E2D0;
+  width: 50px;
+  height: 70px;
+  left: 16.1rem;
+  bottom: 3.5rem;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.entries__card .fa-regular, .entries__card .far {
+  font-size: 20px;
+  background-color: white;
+  border: 0px solid #99E2D0;
+  border-radius: 50px;
+  color: #99E2D0;
+}
+
 /*# sourceMappingURL=style.css.map */

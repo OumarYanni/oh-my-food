@@ -59,3 +59,51 @@
         margin: 5px 0 0 0;
     }
 }
+/*Rajouter une extension pour les autres card du menus*/
+.entries__card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: $colour-white;
+    width: 90%;
+    height: 60px;
+    margin: 10px 0px;
+    padding: 5px 0px 5px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    
+    h3 {
+    margin: 10px 0 0 0;
+    }
+
+    p {
+    margin: 0;
+    }
+
+    span {
+       float: right; 
+    }
+
+    figure {
+        margin: 0;
+        position: relative;
+        border: 2px solid $colour-tertiary;
+        width: 50px;
+        height: 70px;
+        left: 16.1rem;
+        bottom: 3.5rem;
+        border-radius: 0px 15px 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colour-tertiary;
+    }
+
+    .fa-regular, .far {
+        font-size: 20px;
+        background-color: white;
+        border: 0px solid $colour-tertiary;
+        border-radius: 50px;
+        color: $colour-tertiary;
+    }
+}
