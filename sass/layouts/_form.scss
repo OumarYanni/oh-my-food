@@ -1,3 +1,16 @@
 .form {
+    background-color: $colour-gray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+    .fa-solid, .fas {
+        margin: 15px;
+    }
+
+    & input {
+        background-color: $colour-gray;
+        border: none;
+    }
 }

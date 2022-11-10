@@ -1,0 +1,14 @@
+header {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);*/
+    border-bottom: 3px outset rgba(0, 0, 0, 0.3);
+    figure {
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    img {
+        width: 60%;
+    }
+}
