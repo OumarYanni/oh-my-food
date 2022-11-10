@@ -320,4 +320,32 @@ header img {
   color: #99E2D0;
 }
 
+footer {
+  background-color: #353535;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer h2 {
+  margin: 0;
+  padding: 0px 0px 0 20px;
+  color: #fff;
+}
+footer ul {
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0 20px;
+  color: #fff;
+}
+footer li {
+  padding-bottom: 5px;
+}
+footer a {
+  color: #fff;
+}
+
+/*Delete footer container*/
+
 /*# sourceMappingURL=style.css.map */
