@@ -115,6 +115,14 @@ a {
   color: #fff;
 }
 
+.picture--top-menu {
+  margin: 0;
+}
+.picture--top-menu img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .introduction__container {
   display: flex;
   flex-direction: column;
