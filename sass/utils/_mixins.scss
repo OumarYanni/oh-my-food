@@ -1,0 +1,71 @@
+@mixin card-fonts {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px ;
+    font-style: normal;  
+}
+
+@mixin menu-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: $colour-white;
+    width: 85%;
+    height: 60px;
+    margin: 10px 0px;
+    padding: 5px 15px 5px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    
+    h3 {
+    margin: 10px 0 0 0;
+    }
+
+    p {
+    margin: 0;
+    }
+
+    span {
+       float: right; 
+    }
+
+    figure {
+        margin: 0;
+        position: relative;
+        border: 2px solid $colour-tertiary;
+        width: 50px;
+        height: 70px;
+        left: 16.1rem;
+        bottom: 3.5rem;
+        border-radius: 0px 15px 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colour-tertiary;
+    }
+
+    .fa-regular, .far {
+        font-size: 20px;
+        background-color: white;
+        border: 0px solid $colour-tertiary;
+        border-radius: 50px;
+        color: $colour-tertiary;
+    }
+}
+
+@mixin menu-container {
+    background-color: $colour-lightgray;
+    height: 1200px;
+    border-radius: 50px 50px 0px 0px;
+
+    h1 {
+        padding: 40px 0 0 25px;
+    }
+}
+
+@mixin menu-container-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+

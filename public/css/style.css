@@ -34,21 +34,19 @@ h3 {
   font-style: normal;
 }
 
-.category__card {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 14px;
-  font-style: normal;
-}
-
-/* créer une mixin et rajouter juste le margin left*/
+/*.category__card {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px ;
+    font-style: normal;
+}*/
+/* créer une mixin et rajouter juste le margin left
 .category__card--offset {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 14px;
-  font-style: normal;
-}
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px ;
+    font-style: normal; 
+}*/
 button {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -67,8 +65,9 @@ a {
   padding: 10px 15px;
   border-radius: 20px;
   border: 2px solid #9356DC;
-  /*box-shadow: $box-shadow
-  color: $colour-white;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+  /*box-shadow: $box-shadow*/
+  color: #fff;
   margin: 10px 0 40px 0;
 }
 
@@ -112,8 +111,8 @@ a {
   padding: 10px 40px;
   border-radius: 30px;
   border: 2px solid #9356DC;
-  /*box-shadow: $box-shadow
-  color: $colour-white;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+  color: #fff;
 }
 
 .introduction__container {
@@ -174,8 +173,47 @@ a {
   padding: 40px 0 0 25px;
 }
 
-/*Ajouter une extension dishes et desserts containers*/
+.la-note-enchantee {
+  background-color: #F7F7F7;
+  height: 1200px;
+  border-radius: 50px 50px 0px 0px;
+}
+.la-note-enchantee h1 {
+  padding: 40px 0 0 25px;
+}
+
+.la-palette-du-gout {
+  background-color: #F7F7F7;
+  height: 1200px;
+  border-radius: 50px 50px 0px 0px;
+}
+.la-palette-du-gout h1 {
+  padding: 40px 0 0 25px;
+}
+
+.le-delice-des-sens {
+  background-color: #F7F7F7;
+  height: 1200px;
+  border-radius: 50px 50px 0px 0px;
+}
+.le-delice-des-sens h1 {
+  padding: 40px 0 0 25px;
+}
+
+/*Ajouter une mixin dishes et desserts containers*/
 .entries__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dishes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desserts__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,6 +252,10 @@ header img {
   border-bottom: 3px solid #99E2D0;
   width: 25px;
   margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  font-style: normal;
 }
 
 /* créer une mixin et rajouter juste le margin left*/
@@ -221,6 +263,10 @@ header img {
   border-bottom: 3px solid #99E2D0;
   width: 25px;
   margin-left: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  font-style: normal;
 }
 
 .fonctionnement__card {
@@ -276,7 +322,7 @@ header img {
   margin: 5px 0 0 0;
 }
 
-/*Rajouter une extension pour les autres card du menus*/
+/*Rajouter peut-être une mixin plutôt qu'une extension pour les autres card du menus*/
 .entries__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -313,6 +359,92 @@ header img {
   background-color: #99E2D0;
 }
 .entries__card .fa-regular, .entries__card .far {
+  font-size: 20px;
+  background-color: white;
+  border: 0px solid #99E2D0;
+  border-radius: 50px;
+  color: #99E2D0;
+}
+
+.dishes__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  width: 85%;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dishes__card h3 {
+  margin: 10px 0 0 0;
+}
+.dishes__card p {
+  margin: 0;
+}
+.dishes__card span {
+  float: right;
+}
+.dishes__card figure {
+  margin: 0;
+  position: relative;
+  border: 2px solid #99E2D0;
+  width: 50px;
+  height: 70px;
+  left: 16.1rem;
+  bottom: 3.5rem;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.dishes__card .fa-regular, .dishes__card .far {
+  font-size: 20px;
+  background-color: white;
+  border: 0px solid #99E2D0;
+  border-radius: 50px;
+  color: #99E2D0;
+}
+
+.desserts__card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  width: 85%;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.desserts__card h3 {
+  margin: 10px 0 0 0;
+}
+.desserts__card p {
+  margin: 0;
+}
+.desserts__card span {
+  float: right;
+}
+.desserts__card figure {
+  margin: 0;
+  position: relative;
+  border: 2px solid #99E2D0;
+  width: 50px;
+  height: 70px;
+  left: 16.1rem;
+  bottom: 3.5rem;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.desserts__card .fa-regular, .desserts__card .far {
   font-size: 20px;
   background-color: white;
   border: 0px solid #99E2D0;

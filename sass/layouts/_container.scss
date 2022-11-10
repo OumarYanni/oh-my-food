@@ -56,18 +56,30 @@ h1 {
 
 /*Ajouter une extension pour appliquer même style aux autres menus*/
 .a-la-francaise {
-    background-color: $colour-lightgray;
-    height: 1200px;
-    border-radius: 50px 50px 0px 0px;
-
-    h1 {
-        padding: 40px 0 0 25px;
-    }
+    @include menu-container
 }
 
-/*Ajouter une extension dishes et desserts containers*/
+.la-note-enchantee {
+    @include menu-container
+}
+
+.la-palette-du-gout {
+    @include menu-container
+}
+
+.le-delice-des-sens {
+    @include menu-container
+}
+
+/*Ajouter une mixin dishes et desserts containers*/
 .entries__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include menu-container-category
+}
+
+.dishes__container {
+    @include menu-container-category
+}
+
+.desserts__container {
+    @include menu-container-category  
 }
