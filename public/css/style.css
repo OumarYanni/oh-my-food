@@ -3,6 +3,10 @@
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
 body {
+  margin: 0;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 100;
@@ -65,6 +69,7 @@ a {
   border: 2px solid #9356DC;
   /*box-shadow: $box-shadow
   color: $colour-white;*/
+  margin: 10px 0 40px 0;
 }
 
 .card__button {
@@ -110,9 +115,75 @@ a {
   color: $colour-white;*/
 }
 
+.introduction__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+.introduction__container h1 {
+  text-align: center;
+  margin: 40px 0 10px 0;
+}
+.introduction__container p {
+  text-align: center;
+}
+
+/*supprimer la classe section introduction*/
+.fonctionnement {
+  height: 300px;
+  /*Supprimer class fonctionnement title*/
+}
+.fonctionnement__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fonctionnement h1 {
+  margin: 40px 0 20px 25px;
+}
+
+.restaurants {
+  background-color: #F7F7F7;
+  height: 1210px;
+}
+.restaurants h1 {
+  padding: 40px 0 0 25px;
+}
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.restaurants a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Ajouter une extension pour appliquer même style aux autres menus*/
+.a-la-francaise {
+  background-color: #F7F7F7;
+  height: 1200px;
+  border-radius: 50px 50px 0px 0px;
+}
+.a-la-francaise h1 {
+  padding: 40px 0 0 25px;
+}
+
+/*Ajouter une extension dishes et desserts containers*/
+.entries__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .category__card {
   border-bottom: 3px solid #99E2D0;
   width: 25px;
+  margin-left: 10px;
 }
 
 /* créer une mixin et rajouter juste le margin left*/
@@ -124,17 +195,20 @@ a {
 
 .fonctionnement__card {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
   border: 2px solid #F7F7F7;
   border-radius: 20px;
   padding: 15px 20px;
   width: 70%;
   background-color: #F7F7F7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
-}
-.fonctionnement__card .fa-solid, .fonctionnement__card .fas {
-  margin: 0px 25px 0px 15px;
-  display: flex;
-  align-items: center;
+  /*.fa-solid, .fas {
+      margin: 0px 25px 0px 15px;
+      display: flex;
+      align-items: center;   
+  }*/
 }
 
 .restaurants__card {
@@ -177,10 +251,10 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background-color: #fff;
-  width: 90%;
+  width: 85%;
   height: 60px;
   margin: 10px 0px;
-  padding: 5px 0px 5px 15px;
+  padding: 5px 15px 5px 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

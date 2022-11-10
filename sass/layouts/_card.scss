@@ -1,6 +1,7 @@
 .category__card {
     border-bottom: 3px solid $colour-tertiary;
-    width: 25px;   
+    width: 25px;  
+    margin-left: 10px; 
 }
 
 /* créer une mixin et rajouter juste le margin left*/
@@ -12,17 +13,20 @@
 
 .fonctionnement__card {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
     border: 2px solid $colour-lightgray;
     border-radius: 20px;
     padding: 15px 20px;
     width: 70%;
     background-color: $colour-lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38); 
-    .fa-solid, .fas {
+    /*.fa-solid, .fas {
         margin: 0px 25px 0px 15px;
         display: flex;
         align-items: center;   
-    } 
+    }*/ 
 }
 
 .restaurants__card {
@@ -64,10 +68,10 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
     background-color: $colour-white;
-    width: 90%;
+    width: 85%;
     height: 60px;
     margin: 10px 0px;
-    padding: 5px 0px 5px 15px;
+    padding: 5px 15px 5px 15px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; 
