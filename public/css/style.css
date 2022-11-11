@@ -406,14 +406,69 @@ header img {
 }
 .entries__card h3 {
   margin: 10px 0 0 0;
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
 }
 .entries__card p {
   margin: 0;
+  width: 66%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .entries__card span {
-  float: right;
+  position: absolute;
+  right: 5%;
 }
 .entries__card figure {
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  border: 2px solid #99E2D0;
+  width: 15%;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.entries__card .fa-regular, .entries__card .far {
+  font-size: 20px;
+  background-color: white;
+  border: 0px solid #99E2D0;
+  border-radius: 50px;
+  color: #99E2D0;
+}
+.entries__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  width: 85%;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.entries__card:hover h3 {
+  margin: 10px 0 0 0;
+}
+.entries__card:hover p {
+  margin: 0;
+}
+.entries__card:hover span {
+  float: none;
+  position: absolute;
+  right: 22%;
+}
+.entries__card:hover figure {
   margin: 0;
   position: absolute;
   top: 0%;
@@ -427,7 +482,7 @@ header img {
   align-items: center;
   background-color: #99E2D0;
 }
-.entries__card .fa-regular, .entries__card .far {
+.entries__card:hover .fa-regular, .entries__card:hover .far {
   font-size: 20px;
   background-color: white;
   border: 0px solid #99E2D0;
@@ -450,14 +505,69 @@ header img {
 }
 .dishes__card h3 {
   margin: 10px 0 0 0;
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
 }
 .dishes__card p {
   margin: 0;
+  width: 66%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dishes__card span {
-  float: right;
+  position: absolute;
+  right: 5%;
 }
 .dishes__card figure {
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  border: 2px solid #99E2D0;
+  width: 15%;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.dishes__card .fa-regular, .dishes__card .far {
+  font-size: 20px;
+  background-color: white;
+  border: 0px solid #99E2D0;
+  border-radius: 50px;
+  color: #99E2D0;
+}
+.dishes__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  width: 85%;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.dishes__card:hover h3 {
+  margin: 10px 0 0 0;
+}
+.dishes__card:hover p {
+  margin: 0;
+}
+.dishes__card:hover span {
+  float: none;
+  position: absolute;
+  right: 22%;
+}
+.dishes__card:hover figure {
   margin: 0;
   position: absolute;
   top: 0%;
@@ -471,7 +581,7 @@ header img {
   align-items: center;
   background-color: #99E2D0;
 }
-.dishes__card .fa-regular, .dishes__card .far {
+.dishes__card:hover .fa-regular, .dishes__card:hover .far {
   font-size: 20px;
   background-color: white;
   border: 0px solid #99E2D0;
@@ -494,14 +604,69 @@ header img {
 }
 .desserts__card h3 {
   margin: 10px 0 0 0;
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
 }
 .desserts__card p {
   margin: 0;
+  width: 66%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .desserts__card span {
-  float: right;
+  position: absolute;
+  right: 5%;
 }
 .desserts__card figure {
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  border: 2px solid #99E2D0;
+  width: 15%;
+  height: 70px;
+  border-radius: 0px 15px 15px 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+}
+.desserts__card .fa-regular, .desserts__card .far {
+  font-size: 20px;
+  background-color: white;
+  border: 0px solid #99E2D0;
+  border-radius: 50px;
+  color: #99E2D0;
+}
+.desserts__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+  width: 85%;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 5px 15px 5px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.desserts__card:hover h3 {
+  margin: 10px 0 0 0;
+}
+.desserts__card:hover p {
+  margin: 0;
+}
+.desserts__card:hover span {
+  float: none;
+  position: absolute;
+  right: 22%;
+}
+.desserts__card:hover figure {
   margin: 0;
   position: absolute;
   top: 0%;
@@ -515,7 +680,7 @@ header img {
   align-items: center;
   background-color: #99E2D0;
 }
-.desserts__card .fa-regular, .desserts__card .far {
+.desserts__card:hover .fa-regular, .desserts__card:hover .far {
   font-size: 20px;
   background-color: white;
   border: 0px solid #99E2D0;

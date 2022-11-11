@@ -102,13 +102,25 @@
 }
 /*Rajouter peut-être une mixin plutôt qu'une extension pour les autres card du menus*/
 .entries__card {
-    @include menu-card
+    @include menu-card;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
 }
 
 .dishes__card {
-    @include menu-card
+    @include menu-card;
+
+    &:hover {
+        @include menu-card--hover;
+    } 
 }
 
 .desserts__card {
-    @include menu-card   
+    @include menu-card; 
+    
+    &:hover {
+        @include menu-card--hover;
+    } 
 }
