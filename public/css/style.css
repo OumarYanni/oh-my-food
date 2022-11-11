@@ -309,21 +309,30 @@ header img {
 }
 
 .fonctionnement__card {
+  font-weight: bold;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 10px 0;
-  border: 2px solid #F7F7F7;
+  border: none;
   border-radius: 20px;
   padding: 15px 20px;
   width: 70%;
   background-color: #F7F7F7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
   /*.fa-solid, .fas {
-      margin: 0px 25px 0px 15px;
-      display: flex;
-      align-items: center;   
+      color: $colour-gray   
   }*/
+}
+.fonctionnement__card:hover {
+  background: #F5EDFF;
+  /*text-decoration: black;*/
+}
+.fonctionnement__card:hover span {
+  color: #101010;
+}
+.fonctionnement__card:hover, .fonctionnement__card .fas {
+  color: #9356DC;
 }
 
 .restaurants__card {

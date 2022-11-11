@@ -14,21 +14,31 @@
 }
 
 .fonctionnement__card {
+    font-weight: bold;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 10px 0;
-    border: 2px solid $colour-lightgray;
+    border: none;
     border-radius: 20px;
     padding: 15px 20px;
     width: 70%;
     background-color: $colour-lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38); 
     /*.fa-solid, .fas {
-        margin: 0px 25px 0px 15px;
-        display: flex;
-        align-items: center;   
-    }*/ 
+        color: $colour-gray   
+    }*/
+
+    &:hover {
+     background: $colour-primary--light; 
+     /*text-decoration: black;*/
+    }
+    &:hover span {
+       color: $colour-black; 
+    }
+    &:hover, .fas {
+        color: $colour-primary  
+    }
 }
 
 .restaurants__card {
