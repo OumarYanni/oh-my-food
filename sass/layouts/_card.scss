@@ -55,6 +55,20 @@
         height: 170px;
         object-fit: cover;
     }  
+
+    &:hover { 
+    .fa-regular, .far {
+        display: none;
+    }
+    .card__heart--hover {
+        display: inline-flex;
+        position: absolute;
+        top: 0%;
+        right: 8%;
+        font-size: 30px;
+        color: $colour-primary; 
+    }
+   }
 }
 
 .restaurants__card__description {
@@ -73,10 +87,18 @@
         top: 0%;
         right: 8%;
         font-size: 30px;
+
+        /*&:hover {
+            color: $background-colour-button  
+        }*/
+    }
+    .card__heart--hover {
+        display: none;
     }
     p {
         margin: 5px 0 0 0;
     }
+
 }
 /*Rajouter peut-être une mixin plutôt qu'une extension pour les autres card du menus*/
 .entries__card {

@@ -350,6 +350,17 @@ header img {
   height: 170px;
   object-fit: cover;
 }
+.restaurants__card:hover .fa-regular, .restaurants__card:hover .far {
+  display: none;
+}
+.restaurants__card:hover .card__heart--hover {
+  display: inline-flex;
+  position: absolute;
+  top: 0%;
+  right: 8%;
+  font-size: 30px;
+  color: #9356DC;
+}
 
 .restaurants__card__description {
   padding: 0px 12px;
@@ -368,6 +379,12 @@ header img {
   top: 0%;
   right: 8%;
   font-size: 30px;
+  /*&:hover {
+      color: $background-colour-button  
+  }*/
+}
+.restaurants__card__description .card__heart--hover {
+  display: none;
 }
 .restaurants__card__description p {
   margin: 5px 0 0 0;
