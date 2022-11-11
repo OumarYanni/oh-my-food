@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*$box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.38);*/
+/*@mixin background-colour-button {
+    background: linear-gradient(103deg, rgba(238,114,218,1) 0%, rgba(169,94,220,1) 96%, rgba(167,92,220,1) 100%);
+}*/
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
 body {
@@ -61,10 +64,10 @@ a {
 
 /*rajouter une mixin aprés*/
 .introduction__button {
-  background-color: #9356DC;
-  padding: 10px 15px;
+  background: linear-gradient(103deg, rgb(238, 114, 218) 0%, rgb(169, 94, 220) 96%, rgb(167, 92, 220) 100%);
+  padding: 15px 25px;
   border-radius: 20px;
-  border: 2px solid #9356DC;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
   /*box-shadow: $box-shadow*/
   color: #fff;
@@ -84,7 +87,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 1px;
+  left: 7%;
 }
 
 .button--green {
@@ -94,8 +97,8 @@ a {
   color: #078868;
   border-radius: 2px;
   position: absolute;
-  right: 50px;
-  bottom: 135px;
+  top: 5%;
+  right: 5%;
 }
 
 .header__button--backtohomepage {
@@ -103,16 +106,19 @@ a {
   border: none;
   color: #101010;
   font-size: 20px;
-  padding-right: 30px;
+  position: absolute;
+  left: 5%;
+  top: 35%;
 }
 
 .button--order {
-  background-color: #9356DC;
-  padding: 10px 40px;
+  background: linear-gradient(103deg, rgb(238, 114, 218) 0%, rgb(169, 94, 220) 96%, rgb(167, 92, 220) 100%);
+  padding: 15px 40px;
   border-radius: 30px;
-  border: 2px solid #9356DC;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
   color: #fff;
+  margin: 25px;
 }
 
 .picture--top-menu {
@@ -174,38 +180,62 @@ a {
 /*Ajouter une extension pour appliquer même style aux autres menus*/
 .a-la-francaise {
   background-color: #F7F7F7;
-  height: 1200px;
+  height: 1135px;
   border-radius: 50px 50px 0px 0px;
 }
 .a-la-francaise h1 {
-  padding: 40px 0 0 25px;
+  padding: 40px 0 0 15px;
+  position: relative;
+}
+.a-la-francaise h1 .fa-regular, .a-la-francaise h1 .far {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
 }
 
 .la-note-enchantee {
   background-color: #F7F7F7;
-  height: 1200px;
+  height: 1135px;
   border-radius: 50px 50px 0px 0px;
 }
 .la-note-enchantee h1 {
-  padding: 40px 0 0 25px;
+  padding: 40px 0 0 15px;
+  position: relative;
+}
+.la-note-enchantee h1 .fa-regular, .la-note-enchantee h1 .far {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
 }
 
 .la-palette-du-gout {
   background-color: #F7F7F7;
-  height: 1200px;
+  height: 1135px;
   border-radius: 50px 50px 0px 0px;
 }
 .la-palette-du-gout h1 {
-  padding: 40px 0 0 25px;
+  padding: 40px 0 0 15px;
+  position: relative;
+}
+.la-palette-du-gout h1 .fa-regular, .la-palette-du-gout h1 .far {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
 }
 
 .le-delice-des-sens {
   background-color: #F7F7F7;
-  height: 1200px;
+  height: 1135px;
   border-radius: 50px 50px 0px 0px;
 }
 .le-delice-des-sens h1 {
-  padding: 40px 0 0 25px;
+  padding: 40px 0 0 15px;
+  position: relative;
+}
+.le-delice-des-sens h1 .fa-regular, .le-delice-des-sens h1 .far {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
 }
 
 /*Ajouter une mixin dishes et desserts containers*/
@@ -251,6 +281,7 @@ header figure {
   display: flex;
   justify-content: center;
   margin: 0;
+  position: relative;
 }
 header img {
   width: 60%;
@@ -302,6 +333,7 @@ header img {
   width: 90%;
   height: 250px;
   margin: 10px 0px;
+  position: relative;
 }
 .restaurants__card img {
   border-radius: 20px 20px 0 0;
@@ -312,6 +344,7 @@ header img {
 
 .restaurants__card__description {
   padding: 0px 12px;
+  position: relative;
 }
 .restaurants__card__description h2 {
   /*font-family: "Shrikhand", sans-serif;
@@ -323,7 +356,8 @@ header img {
 }
 .restaurants__card__description .fa-regular, .restaurants__card__description .far {
   position: absolute;
-  right: 50px;
+  top: 0%;
+  right: 8%;
   font-size: 30px;
 }
 .restaurants__card__description p {
@@ -342,6 +376,7 @@ header img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  position: relative;
 }
 .entries__card h3 {
   margin: 10px 0 0 0;
@@ -354,12 +389,12 @@ header img {
 }
 .entries__card figure {
   margin: 0;
-  position: relative;
+  position: absolute;
+  top: 0%;
+  right: 0%;
   border: 2px solid #99E2D0;
-  width: 50px;
+  width: 15%;
   height: 70px;
-  left: 16.1rem;
-  bottom: 3.5rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   justify-content: center;
@@ -385,6 +420,7 @@ header img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  position: relative;
 }
 .dishes__card h3 {
   margin: 10px 0 0 0;
@@ -397,12 +433,12 @@ header img {
 }
 .dishes__card figure {
   margin: 0;
-  position: relative;
+  position: absolute;
+  top: 0%;
+  right: 0%;
   border: 2px solid #99E2D0;
-  width: 50px;
+  width: 15%;
   height: 70px;
-  left: 16.1rem;
-  bottom: 3.5rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   justify-content: center;
@@ -428,6 +464,7 @@ header img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  position: relative;
 }
 .desserts__card h3 {
   margin: 10px 0 0 0;
@@ -440,12 +477,12 @@ header img {
 }
 .desserts__card figure {
   margin: 0;
-  position: relative;
+  position: absolute;
+  top: 0%;
+  right: 0%;
   border: 2px solid #99E2D0;
-  width: 50px;
+  width: 15%;
   height: 70px;
-  left: 16.1rem;
-  bottom: 3.5rem;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   justify-content: center;
