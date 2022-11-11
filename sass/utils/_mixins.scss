@@ -120,6 +120,7 @@
     background-color: $colour-lightgray;
     height: 1135px;
     border-radius: 50px 50px 0px 0px;
+    position: relative;
 
     h1 {
         padding: 40px 0 0 15px;
@@ -143,3 +144,7 @@
     background: linear-gradient(103deg, rgba(238,114,218,1) 0%, rgba(169,94,220,1) 96%, rgba(167,92,220,1) 100%);
 }*/
 
+@mixin background-colour-button--hover {
+    background: rgb(197,122,224);
+    background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 95%); 
+}

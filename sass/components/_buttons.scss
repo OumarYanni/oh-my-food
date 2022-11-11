@@ -54,5 +54,11 @@
     border: none;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.38);
     color: $colour-white;
-    margin: 25px;   
+    position: absolute;
+    right: 28%;
+    bottom: 3.5%;
+    
+    &:hover {
+        @include background-colour-button--hover
+    } 
 }

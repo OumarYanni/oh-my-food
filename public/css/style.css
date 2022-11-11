@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*$box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.38);*/
+/*$background-colour-button--hover :  background: rgb(197,122,224);
+background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 95%);*/
 /*@mixin background-colour-button {
     background: linear-gradient(103deg, rgba(238,114,218,1) 0%, rgba(169,94,220,1) 96%, rgba(167,92,220,1) 100%);
 }*/
@@ -118,7 +120,13 @@ a {
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
   color: #fff;
-  margin: 25px;
+  position: absolute;
+  right: 28%;
+  bottom: 3.5%;
+}
+.button--order:hover {
+  background: rgb(197, 122, 224);
+  background: linear-gradient(73deg, rgb(197, 122, 224) 0%, rgb(224, 131, 224) 95%);
 }
 
 .picture--top-menu {
@@ -182,6 +190,7 @@ a {
   background-color: #F7F7F7;
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
+  position: relative;
 }
 .a-la-francaise h1 {
   padding: 40px 0 0 15px;
@@ -197,6 +206,7 @@ a {
   background-color: #F7F7F7;
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
+  position: relative;
 }
 .la-note-enchantee h1 {
   padding: 40px 0 0 15px;
@@ -212,6 +222,7 @@ a {
   background-color: #F7F7F7;
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
+  position: relative;
 }
 .la-palette-du-gout h1 {
   padding: 40px 0 0 15px;
@@ -227,6 +238,7 @@ a {
   background-color: #F7F7F7;
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
+  position: relative;
 }
 .le-delice-des-sens h1 {
   padding: 40px 0 0 15px;
