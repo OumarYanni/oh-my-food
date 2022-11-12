@@ -13,6 +13,14 @@ background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 9
     transform: translateY(0);
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
 body {
@@ -29,21 +37,21 @@ body {
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 22px;
   font-style: normal;
 }
 
 h2 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
 }
 
 h3 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
 }
 
@@ -97,7 +105,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 7%;
+  left: -3%;
 }
 
 .button--green {
@@ -340,6 +348,7 @@ header img {
   width: 70%;
   background-color: #F7F7F7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+  position: relative;
   /*.fa-solid, .fas {
       color: $colour-gray   
   }*/
@@ -465,6 +474,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .entries__card--1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -566,6 +576,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .entries__card--2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -667,6 +678,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .entries__card--3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -768,6 +780,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .entries__card--4:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -869,6 +882,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .dishes__card--1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -970,6 +984,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .dishes__card--2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1071,6 +1086,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .dishes__card--3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1172,6 +1188,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .desserts__card--1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1273,6 +1290,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .desserts__card--2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1374,6 +1392,7 @@ header img {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
+  animation: rotate 0.5s ease;
 }
 .desserts__card--3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
