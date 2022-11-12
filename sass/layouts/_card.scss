@@ -101,15 +101,107 @@
 
 }
 /*Rajouter peut-être une mixin plutôt qu'une extension pour les autres card du menus*/
-.entries__card {
+.entries__card--1 {
     @include menu-card;
+    
+    animation: slide-up 1.4s ease;
 
     &:hover {
         @include menu-card--hover;
     }   
 }
 
-.dishes__card {
+.entries__card--2 {
+    @include menu-card;
+    
+    animation: slide-up 2.1s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.entries__card--3 {
+    @include menu-card;
+    
+    animation: slide-up 2.4s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.entries__card--4 {
+    @include menu-card;
+    
+    animation: slide-up 2.7s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.dishes__card--1 {
+    @include menu-card;
+    
+    animation: slide-up 1.4s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.dishes__card--2 {
+    @include menu-card;
+    
+    animation: slide-up 2.1s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.dishes__card--3 {
+    @include menu-card;
+    
+    animation: slide-up 2.4s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.desserts__card--1 {
+    @include menu-card;
+    
+    animation: slide-up 1.4s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.desserts__card--2 {
+    @include menu-card;
+    
+    animation: slide-up 2.1s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+.desserts__card--3 {
+    @include menu-card;
+    
+    animation: slide-up 2.4s ease;
+
+    &:hover {
+        @include menu-card--hover;
+    }   
+}
+
+/*.dishes__card {
     @include menu-card;
 
     &:hover {
@@ -123,4 +215,4 @@
     &:hover {
         @include menu-card--hover;
     } 
-}
+}*/
