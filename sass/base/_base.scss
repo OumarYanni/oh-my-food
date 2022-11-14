@@ -1,3 +1,38 @@
 body {
     margin: 0;
+    position: relative;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $colour-white;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disappear 0.2s $animation-duration * $animation-count forwards;
+
+}
+
+.preloader .loader {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.preloader .loader::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 6px solid;
+  border-color: $colour-primary $colour-secondary $colour-tertiary transparent;
+  border-radius: 50%;
+  animation: loader $animation-duration ease-in-out;
+  animation-iteration-count: $animation-count;
 }

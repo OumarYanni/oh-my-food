@@ -21,10 +21,60 @@ background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 9
     transform: rotate(360deg);
   }
 }
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 /*@import "./utils/placeholders";*/
 /*import feuille de style externes comme le normalizer*/
 body {
   margin: 0;
+  position: relative;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disappear 0.2s 3s forwards;
+}
+
+.preloader .loader {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.preloader .loader::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 6px solid;
+  border-color: #9356DC #FF79DA #99E2D0 transparent;
+  border-radius: 50%;
+  animation: loader 1s ease-in-out;
+  animation-iteration-count: 3;
 }
 
 body {
