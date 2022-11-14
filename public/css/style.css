@@ -91,6 +91,11 @@ a {
   color: #fff;
   margin: 10px 0 40px 0;
 }
+.introduction__button:hover {
+  background: rgb(197, 122, 224);
+  background: linear-gradient(73deg, rgb(197, 122, 224) 0%, rgb(224, 131, 224) 95%);
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.5);
+}
 
 .card__button {
   font-size: 12px;
@@ -105,7 +110,7 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -3%;
+  left: -2%;
 }
 
 .button--green {
@@ -143,6 +148,7 @@ a {
 .button--order:hover {
   background: rgb(197, 122, 224);
   background: linear-gradient(73deg, rgb(197, 122, 224) 0%, rgb(224, 131, 224) 95%);
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
 .picture--top-menu {
@@ -207,6 +213,29 @@ a {
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
   position: relative;
+  /*h1 .fa-regular, .far {
+      position: absolute;
+      right: 8%;
+      bottom: 0%;
+  }
+
+  h1 .fa-solid, .fas {
+      display: none;
+  }
+
+  &:hover {
+      h1 .fa-regular, .far {
+          display: none;
+      }
+
+      h1 .fa-solid, .fas {
+          position: absolute;
+          right: 8%;
+          bottom: 0%;
+          color: $colour-primary;
+          display: flex;
+      }   
+  }*/
 }
 .a-la-francaise h1 {
   padding: 40px 0 0 15px;
@@ -216,6 +245,19 @@ a {
   position: absolute;
   right: 8%;
   bottom: 0%;
+}
+.a-la-francaise h1 .fa-solid, .a-la-francaise h1 .fas {
+  display: none;
+}
+.a-la-francaise:hover h1 .fa-regular, .a-la-francaise:hover .far {
+  display: none;
+}
+.a-la-francaise:hover h1 .fa-solid, .a-la-francaise:hover .fas {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
+  color: #9356DC;
+  display: flex;
 }
 
 .la-note-enchantee {
@@ -233,6 +275,19 @@ a {
   right: 8%;
   bottom: 0%;
 }
+.la-note-enchantee h1 .fa-solid, .la-note-enchantee h1 .fas {
+  display: none;
+}
+.la-note-enchantee:hover h1 .fa-regular, .la-note-enchantee:hover .far {
+  display: none;
+}
+.la-note-enchantee:hover h1 .fa-solid, .la-note-enchantee:hover .fas {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
+  color: #9356DC;
+  display: flex;
+}
 
 .la-palette-du-gout {
   background-color: #F7F7F7;
@@ -249,6 +304,19 @@ a {
   right: 8%;
   bottom: 0%;
 }
+.la-palette-du-gout h1 .fa-solid, .la-palette-du-gout h1 .fas {
+  display: none;
+}
+.la-palette-du-gout:hover h1 .fa-regular, .la-palette-du-gout:hover .far {
+  display: none;
+}
+.la-palette-du-gout:hover h1 .fa-solid, .la-palette-du-gout:hover .fas {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
+  color: #9356DC;
+  display: flex;
+}
 
 .le-delice-des-sens {
   background-color: #F7F7F7;
@@ -264,6 +332,19 @@ a {
   position: absolute;
   right: 8%;
   bottom: 0%;
+}
+.le-delice-des-sens h1 .fa-solid, .le-delice-des-sens h1 .fas {
+  display: none;
+}
+.le-delice-des-sens:hover h1 .fa-regular, .le-delice-des-sens:hover .far {
+  display: none;
+}
+.le-delice-des-sens:hover h1 .fa-solid, .le-delice-des-sens:hover .fas {
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
+  color: #9356DC;
+  display: flex;
 }
 
 /*Ajouter une mixin dishes et desserts containers*/

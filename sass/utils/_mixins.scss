@@ -134,7 +134,27 @@
             right: 8%;
             bottom: 0%;
         }
+    
+        .fa-solid, .fas {
+            display: none;
+        }
     }
+}
+
+@mixin menu-container--hover {
+    &:hover {
+        h1 .fa-regular, .far {
+            display: none;
+        }
+    
+        h1 .fa-solid, .fas {
+            position: absolute;
+            right: 8%;
+            bottom: 0%;
+            color: $colour-primary;
+            display: flex;
+        }   
+    }  
 }
 
 @mixin menu-container-category {
@@ -150,4 +170,9 @@
 @mixin background-colour-button--hover {
     background: rgb(197,122,224);
     background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 95%); 
+    box-shadow: 0 4px 8px 1px rgba(0,0,0,0.5);   
+}
+
+@mixin tablette-desktop {
+    
 }
