@@ -1,9 +1,14 @@
 @keyframes slide-up {
     0% {
-        transform: translateY(25%); 
+        transform: translateY(25%);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1; 
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -28,9 +33,22 @@
 
 @keyframes disappear {
     from {
-        transform: scale(1);
+        /*transform: scale(1);*/
+        visibility: visible;
     }
     to {
-        transform: scale(0);
+        /*transform: scale(0);*/
+        visibility: hidden;
+    }
+}
+
+@keyframes disappear-reverse {
+    from {
+        /*transform: scale(1);*/
+        visibility: hidden;
+    }
+    to {
+        /*transform: scale(0);*/
+        visibility: visible;
     }
 }

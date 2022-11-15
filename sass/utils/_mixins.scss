@@ -173,6 +173,26 @@
     box-shadow: 0 4px 8px 1px rgba(0,0,0,0.5);   
 }
 
+@mixin animation-menu-card-nth--1 {
+    animation: slide-up 1s ease-in-out backwards;
+    animation-delay: 0.6s; 
+}
+
+@mixin animation-menu-card-nth--2 {
+    animation: slide-up 1s ease-in-out backwards;
+    animation-delay: 0.9s; 
+}
+
+@mixin animation-menu-card-nth--3 {
+    animation: slide-up 1s ease-in-out backwards;
+    animation-delay: 1.2s; 
+}
+
+@mixin animation-menu-card-nth--4 {
+    animation: slide-up 1s ease-in-out backwards;
+    animation-delay: 1.5s; 
+}
+
 @mixin tablette-desktop {
     
 }

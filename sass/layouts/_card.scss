@@ -105,7 +105,7 @@
 .entries__card--1 {
     @include menu-card;
     
-    animation: slide-up 1.4s ease;
+    @include animation-menu-card-nth--1;
 
     &:hover {
         @include menu-card--hover;
@@ -115,7 +115,7 @@
 .entries__card--2 {
     @include menu-card;
     
-    animation: slide-up 2.1s ease;
+    @include animation-menu-card-nth--2;
 
     &:hover {
         @include menu-card--hover;
@@ -125,7 +125,7 @@
 .entries__card--3 {
     @include menu-card;
     
-    animation: slide-up 2.4s ease;
+    @include animation-menu-card-nth--3;
 
     &:hover {
         @include menu-card--hover;
@@ -135,7 +135,7 @@
 .entries__card--4 {
     @include menu-card;
     
-    animation: slide-up 2.7s ease;
+    @include animation-menu-card-nth--4;
 
     &:hover {
         @include menu-card--hover;
@@ -145,7 +145,7 @@
 .dishes__card--1 {
     @include menu-card;
     
-    animation: slide-up 1.4s ease;
+    @include animation-menu-card-nth--1;
 
     &:hover {
         @include menu-card--hover;
@@ -155,7 +155,7 @@
 .dishes__card--2 {
     @include menu-card;
     
-    animation: slide-up 2.1s ease;
+    @include animation-menu-card-nth--2;
 
     &:hover {
         @include menu-card--hover;
@@ -165,7 +165,7 @@
 .dishes__card--3 {
     @include menu-card;
     
-    animation: slide-up 2.4s ease;
+    @include animation-menu-card-nth--3;
 
     &:hover {
         @include menu-card--hover;
@@ -175,7 +175,7 @@
 .desserts__card--1 {
     @include menu-card;
     
-    animation: slide-up 1.4s ease;
+    @include animation-menu-card-nth--1;
 
     &:hover {
         @include menu-card--hover;
@@ -185,7 +185,7 @@
 .desserts__card--2 {
     @include menu-card;
     
-    animation: slide-up 2.1s ease;
+    @include animation-menu-card-nth--2;
 
     &:hover {
         @include menu-card--hover;
@@ -195,7 +195,7 @@
 .desserts__card--3 {
     @include menu-card;
     
-    animation: slide-up 2.4s ease;
+    @include animation-menu-card-nth--3;
 
     &:hover {
         @include menu-card--hover;
