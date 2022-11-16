@@ -57,7 +57,7 @@
         object-fit: cover;
     }  
 
-    &:hover { 
+    /*&:hover { 
     .fa-regular, .far {
         display: none;
     }
@@ -69,7 +69,7 @@
         font-size: 30px;
         color: $colour-primary; 
     }
-   }
+   }*/
 }
 
 .restaurants__card__description {
@@ -93,9 +93,10 @@
             color: $background-colour-button  
         }*/
     }
-    .card__heart--hover {
+    /*.card__heart--hover {
         display: none;
-    }
+    }*/
+
     p {
         margin: 5px 0 0 0;
     }

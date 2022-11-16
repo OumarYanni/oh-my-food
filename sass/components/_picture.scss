@@ -1,8 +1,8 @@
 .picture--top-menu {
     margin: 0;
-
+    position: absolute;
     & img {
-        object-fit: cover;
+        /*object-fit: cover;*/
         width: 100%;
     }
 }

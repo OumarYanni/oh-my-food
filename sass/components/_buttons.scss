@@ -67,3 +67,72 @@
         @include background-colour-button--hover
     } 
 }
+
+.homepage-button--like {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0%;
+    right: 8%;
+    font-size: 30px;
+    /*display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    position: absolute;
+    top: 0%;
+    right: 8%;
+    font-size: 30px;*/
+
+    .homepage-heart-button--empty {
+        position: absolute;
+        top: 0%;
+        right: 8%;
+        font-size: 30px;
+    }
+
+    .homepage-heart-button--full {
+        position: absolute;
+        top: 0%;
+        right: 8%;
+        font-size: 30px;
+        color: $colour-primary;
+        display: none;
+    }
+
+    &:hover {
+    .homepage-heart-button--full {
+        display: block;
+    }
+    }
+}
+
+.button--like {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 2.7%;
+    right: 8%;
+    font-size: 30px;
+
+    .heart-button--empty {
+        position: absolute;
+        top: 2.7%;
+        right: 8%;
+        font-size: 30px;
+    }
+
+    .heart-button--full {
+        position: absolute;
+        top: 2.7%;
+        right: 8%;
+        font-size: 30px;
+        color: $colour-primary;
+        display: none;
+    }
+
+    &:hover {
+    .heart-button--full {
+        display: block;
+    }
+    }
+}

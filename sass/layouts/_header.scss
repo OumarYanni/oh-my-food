@@ -1,12 +1,13 @@
 header {
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);*/
-    border-bottom: 3px outset rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 1px inset rgba(0, 0, 0, 0.1);
+    position: relative;
     figure {
         padding: 15px 0;
         display: flex;
         justify-content: center;
         margin: 0;
-        position: relative;
     }
 
     img {

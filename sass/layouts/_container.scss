@@ -57,7 +57,7 @@ h1 {
 /*Ajouter une extension pour appliquer même style aux autres menus*/
 .a-la-francaise {
     @include menu-container;
-    @include menu-container--hover;
+    /*@include menu-container--hover;*/
 
     /*h1 .fa-regular, .far {
         position: absolute;
@@ -85,18 +85,18 @@ h1 {
 }
 
 .la-note-enchantee {
-    @include menu-container;
-    @include menu-container--hover;
+    @include menu-container--higher-height;
+    /*@include menu-container--hover;*/
 }
 
 .la-palette-du-gout {
     @include menu-container;
-    @include menu-container--hover;
+    /*@include menu-container--hover;*/
 }
 
 .le-delice-des-sens {
     @include menu-container;
-    @include menu-container--hover;
+    /*@include menu-container--hover;*/
 }
 
 /*Ajouter une mixin dishes et desserts containers*/

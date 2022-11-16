@@ -2,6 +2,21 @@
 /*$box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.38);*/
 /*$background-colour-button--hover :  background: rgb(197,122,224);
 background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 95%);*/
+/*@mixin menu-container--hover {
+    &:hover {
+        h1 .fa-regular, .far {
+            display: none;
+        }
+
+        h1 .fa-solid, .fas {
+            position: absolute;
+            right: 8%;
+            bottom: 0%;
+            color: $colour-primary;
+            display: flex;
+        }   
+    }  
+}*/
 /*@mixin background-colour-button {
     background: linear-gradient(103deg, rgba(238,114,218,1) 0%, rgba(169,94,220,1) 96%, rgba(167,92,220,1) 100%);
 }*/
@@ -218,11 +233,71 @@ a {
   box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
+.homepage-button--like {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0%;
+  right: 8%;
+  font-size: 30px;
+  /*display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  position: absolute;
+  top: 0%;
+  right: 8%;
+  font-size: 30px;*/
+}
+.homepage-button--like .homepage-heart-button--empty {
+  position: absolute;
+  top: 0%;
+  right: 8%;
+  font-size: 30px;
+}
+.homepage-button--like .homepage-heart-button--full {
+  position: absolute;
+  top: 0%;
+  right: 8%;
+  font-size: 30px;
+  color: #9356DC;
+  display: none;
+}
+.homepage-button--like:hover .homepage-heart-button--full {
+  display: block;
+}
+
+.button--like {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 2.7%;
+  right: 8%;
+  font-size: 30px;
+}
+.button--like .heart-button--empty {
+  position: absolute;
+  top: 2.7%;
+  right: 8%;
+  font-size: 30px;
+}
+.button--like .heart-button--full {
+  position: absolute;
+  top: 2.7%;
+  right: 8%;
+  font-size: 30px;
+  color: #9356DC;
+  display: none;
+}
+.button--like:hover .heart-button--full {
+  display: block;
+}
+
 .picture--top-menu {
   margin: 0;
+  position: absolute;
 }
 .picture--top-menu img {
-  object-fit: cover;
+  /*object-fit: cover;*/
   width: 100%;
 }
 
@@ -280,6 +355,8 @@ a {
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
   position: relative;
+  margin-top: 50%;
+  /*@include menu-container--hover;*/
   /*h1 .fa-regular, .far {
       position: absolute;
       right: 8%;
@@ -313,25 +390,27 @@ a {
   right: 8%;
   bottom: 0%;
 }
+.a-la-francaise h1 .fa-regular:hover, .a-la-francaise h1 .far:hover {
+  display: none;
+}
 .a-la-francaise h1 .fa-solid, .a-la-francaise h1 .fas {
   display: none;
 }
-.a-la-francaise:hover h1 .fa-regular, .a-la-francaise:hover .far {
-  display: none;
-}
-.a-la-francaise:hover h1 .fa-solid, .a-la-francaise:hover .fas {
+.a-la-francaise h1 .fa-solid:hover, .a-la-francaise h1 .fas:hover {
   position: absolute;
   right: 8%;
   bottom: 0%;
   color: #9356DC;
-  display: flex;
+  display: block;
 }
 
 .la-note-enchantee {
   background-color: #F7F7F7;
-  height: 1135px;
+  height: 1225px;
   border-radius: 50px 50px 0px 0px;
   position: relative;
+  margin-top: 50%;
+  /*@include menu-container--hover;*/
 }
 .la-note-enchantee h1 {
   padding: 40px 0 0 15px;
@@ -342,18 +421,18 @@ a {
   right: 8%;
   bottom: 0%;
 }
+.la-note-enchantee h1 .fa-regular:hover, .la-note-enchantee h1 .far:hover {
+  display: none;
+}
 .la-note-enchantee h1 .fa-solid, .la-note-enchantee h1 .fas {
   display: none;
 }
-.la-note-enchantee:hover h1 .fa-regular, .la-note-enchantee:hover .far {
-  display: none;
-}
-.la-note-enchantee:hover h1 .fa-solid, .la-note-enchantee:hover .fas {
+.la-note-enchantee h1 .fa-solid:hover, .la-note-enchantee h1 .fas:hover {
   position: absolute;
   right: 8%;
   bottom: 0%;
   color: #9356DC;
-  display: flex;
+  display: block;
 }
 
 .la-palette-du-gout {
@@ -361,6 +440,8 @@ a {
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
   position: relative;
+  margin-top: 50%;
+  /*@include menu-container--hover;*/
 }
 .la-palette-du-gout h1 {
   padding: 40px 0 0 15px;
@@ -371,18 +452,18 @@ a {
   right: 8%;
   bottom: 0%;
 }
+.la-palette-du-gout h1 .fa-regular:hover, .la-palette-du-gout h1 .far:hover {
+  display: none;
+}
 .la-palette-du-gout h1 .fa-solid, .la-palette-du-gout h1 .fas {
   display: none;
 }
-.la-palette-du-gout:hover h1 .fa-regular, .la-palette-du-gout:hover .far {
-  display: none;
-}
-.la-palette-du-gout:hover h1 .fa-solid, .la-palette-du-gout:hover .fas {
+.la-palette-du-gout h1 .fa-solid:hover, .la-palette-du-gout h1 .fas:hover {
   position: absolute;
   right: 8%;
   bottom: 0%;
   color: #9356DC;
-  display: flex;
+  display: block;
 }
 
 .le-delice-des-sens {
@@ -390,6 +471,8 @@ a {
   height: 1135px;
   border-radius: 50px 50px 0px 0px;
   position: relative;
+  margin-top: 50%;
+  /*@include menu-container--hover;*/
 }
 .le-delice-des-sens h1 {
   padding: 40px 0 0 15px;
@@ -400,18 +483,18 @@ a {
   right: 8%;
   bottom: 0%;
 }
+.le-delice-des-sens h1 .fa-regular:hover, .le-delice-des-sens h1 .far:hover {
+  display: none;
+}
 .le-delice-des-sens h1 .fa-solid, .le-delice-des-sens h1 .fas {
   display: none;
 }
-.le-delice-des-sens:hover h1 .fa-regular, .le-delice-des-sens:hover .far {
-  display: none;
-}
-.le-delice-des-sens:hover h1 .fa-solid, .le-delice-des-sens:hover .fas {
+.le-delice-des-sens h1 .fa-solid:hover, .le-delice-des-sens h1 .fas:hover {
   position: absolute;
   right: 8%;
   bottom: 0%;
   color: #9356DC;
-  display: flex;
+  display: block;
 }
 
 /*Ajouter une mixin dishes et desserts containers*/
@@ -450,14 +533,15 @@ a {
 
 header {
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);*/
-  border-bottom: 3px outset rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px inset rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 header figure {
   padding: 15px 0;
   display: flex;
   justify-content: center;
   margin: 0;
-  position: relative;
 }
 header img {
   width: 60%;
@@ -520,6 +604,19 @@ header img {
   height: 250px;
   margin: 10px 0px;
   position: relative;
+  /*&:hover { 
+   .fa-regular, .far {
+       display: none;
+   }
+   .card__heart--hover {
+       display: inline-flex;
+       position: absolute;
+       top: 0%;
+       right: 8%;
+       font-size: 30px;
+       color: $colour-primary; 
+   }
+  }*/
 }
 .restaurants__card img {
   border-radius: 20px 20px 0 0;
@@ -527,21 +624,13 @@ header img {
   height: 170px;
   object-fit: cover;
 }
-.restaurants__card:hover .fa-regular, .restaurants__card:hover .far {
-  display: none;
-}
-.restaurants__card:hover .card__heart--hover {
-  display: inline-flex;
-  position: absolute;
-  top: 0%;
-  right: 8%;
-  font-size: 30px;
-  color: #9356DC;
-}
 
 .restaurants__card__description {
   padding: 0px 12px;
   position: relative;
+  /*.card__heart--hover {
+      display: none;
+  }*/
 }
 .restaurants__card__description h2 {
   /*font-family: "Shrikhand", sans-serif;
@@ -559,9 +648,6 @@ header img {
   /*&:hover {
       color: $background-colour-button  
   }*/
-}
-.restaurants__card__description .card__heart--hover {
-  display: none;
 }
 .restaurants__card__description p {
   margin: 5px 0 0 0;
