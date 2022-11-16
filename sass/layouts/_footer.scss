@@ -6,6 +6,10 @@ footer {
   justify-content: center;
   align-items: flex-start;
 
+  @include tablette-desktop {
+    align-items: center;
+}
+
   h2 {
     margin: 0;
     padding: 0px 0px 0 20px;

@@ -63,6 +63,10 @@
     right: 28%;
     bottom: 3.5%;
     
+    @include tablette-desktop {
+        right: 40%;
+    }
+
     &:hover {
         @include background-colour-button--hover
     } 

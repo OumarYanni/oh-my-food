@@ -244,5 +244,8 @@
 }
 
 @mixin tablette-desktop {
-    
+    @media screen and (min-width: map-get($breakpoints, tablette-desktop)){
+        @content;
+    }
+        
 }

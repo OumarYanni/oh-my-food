@@ -227,6 +227,11 @@ a {
   right: 28%;
   bottom: 3.5%;
 }
+@media screen and (min-width: 413px) {
+  .button--order {
+    right: 40%;
+  }
+}
 .button--order:hover {
   background: rgb(197, 122, 224);
   background: linear-gradient(73deg, rgb(197, 122, 224) 0%, rgb(224, 131, 224) 95%);
@@ -1706,6 +1711,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+@media screen and (min-width: 413px) {
+  footer {
+    align-items: center;
+  }
 }
 footer h2 {
   margin: 0;
