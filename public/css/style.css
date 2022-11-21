@@ -117,22 +117,22 @@ body {
 }
 
 h1 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 22px;
   font-style: normal;
 }
 
 h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 17px;
   font-style: normal;
 }
 
 h3 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 15px;
   font-style: normal;
 }
@@ -549,7 +549,7 @@ header figure {
   margin: 0;
 }
 header img {
-  width: 60%;
+  width: 150px;
 }
 
 .category__card {
@@ -1721,6 +1721,7 @@ footer h2 {
   margin: 0;
   padding: 0px 0px 0 20px;
   color: #fff;
+  font-family: "Shrikhand", sans-serif;
 }
 footer ul {
   margin-bottom: 0px;
