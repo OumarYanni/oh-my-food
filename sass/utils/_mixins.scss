@@ -123,10 +123,10 @@
 
 @mixin menu-container {
     background-color: $colour-lightgray;
-    height: 1135px;
+    /*height: 1135px;*/
     border-radius: 50px 50px 0px 0px;
     position: relative;
-    margin-top: 50%;
+    margin-top: -65px;
 
     h1 {
         padding: 40px 0 0 15px;
@@ -156,7 +156,7 @@
     }
 }
 
-@mixin menu-container--higher-height {
+/*@mixin menu-container--higher-height {
     background-color: $colour-lightgray;
     height: 1225px;
     border-radius: 50px 50px 0px 0px;
@@ -189,7 +189,7 @@
             }
         }
     }
-}
+}*/
 
 /*@mixin menu-container--hover {
     &:hover {

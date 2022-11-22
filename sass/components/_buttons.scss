@@ -8,6 +8,7 @@
     /*box-shadow: $box-shadow*/
     color: $colour-white;
     margin: 10px 0 40px 0;
+    font-weight: bold;
 
     &:hover {
         @include background-colour-button--hover
@@ -59,10 +60,12 @@
     border: none;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.38);
     color: $colour-white;
-    position: absolute;
+    /*position: absolute;
     right: 28%;
-    bottom: 3.5%;
+    bottom: 3.5%;*/
     font-weight: 900;
+    width: fit-content;
+    margin: 40px auto;
     
     @include tablette-desktop {
         right: 40%;
@@ -100,13 +103,20 @@
         top: 0%;
         right: 8%;
         font-size: 30px;
-        color: $colour-primary;
+        /*color: $colour-primary;*/
         display: none;
     }
 
     &:hover {
     .homepage-heart-button--full {
         display: block;
+        /*animation: slide-up 1s ease-in-out backwards;
+        animation-delay: 0.6s;*/
+        animation: like 1s ease-in-out backwards;
+        background: ($background-colour-button) no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     }
 }
@@ -129,7 +139,7 @@
     .heart-button--full {
         position: absolute;
         top: 2.7%;
-        right: 8%;
+        right: 5%;
         font-size: 30px;
         color: $colour-primary;
         display: none;
@@ -138,6 +148,11 @@
     &:hover {
     .heart-button--full {
         display: block;
+        animation: like 1s ease-in-out backwards;
+        background: ($background-colour-button) no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     }
 }

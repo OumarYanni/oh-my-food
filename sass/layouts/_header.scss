@@ -13,4 +13,8 @@ header {
     img {
         width: 150px;
     }
+
+    & a {
+        background: $colour-lightgray;
+    }
 }

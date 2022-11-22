@@ -26,6 +26,14 @@
     background-color: $colour-lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38); 
     position: relative;
+    @include tablette-desktop {
+        max-width: 400px;
+        margin: 0px 20px;
+        /*height: 50%;*/
+    /*span {
+        margin-left: 30px;
+    }*/
+    }
     /*.fa-solid, .fas {
         color: $colour-gray   
     }*/
