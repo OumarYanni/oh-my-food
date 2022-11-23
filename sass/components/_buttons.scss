@@ -129,11 +129,19 @@
     right: 8%;
     font-size: 30px;
 
+    @include tablette-desktop {
+        width: 20%;
+    }
+
     .heart-button--empty {
         position: absolute;
         top: 2.7%;
         right: 8%;
         font-size: 30px;
+
+        @include tablette-desktop {
+            margin-right: 100%;
+        }
     }
 
     .heart-button--full {
@@ -153,6 +161,10 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+
+        @include tablette-desktop {
+            margin-right: 102.8%;
+        }
     }
     }
 }

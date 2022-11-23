@@ -66,6 +66,10 @@
         color: $colour-tertiary;
         animation: rotate 0.5s ease;
     }
+
+    @include tablette-desktop {
+        max-width: 500px;
+      }
 }
 
 @mixin menu-card--hover {
@@ -131,6 +135,10 @@
     h1 {
         padding: 40px 0 0 15px;
         position: relative;
+
+        @include tablette-desktop {
+            text-align: center;
+          }
 
         .fa-regular, .far {
             position: absolute;

@@ -3,6 +3,10 @@
     width: 25px;  
     margin-left: 10px; 
     @include card-fonts;
+
+    @include tablette-desktop {
+        margin-left: 30%;
+    }
 }
 
 /* créer une mixin et rajouter juste le margin left*/
@@ -11,6 +15,10 @@
     width: 25px; 
     margin-left: 25px;
     @include card-fonts;  
+
+    @include tablette-desktop {
+        margin-left: 30%;
+    }
 }
 
 .fonctionnement__card {

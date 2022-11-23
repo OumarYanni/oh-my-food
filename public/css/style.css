@@ -344,11 +344,21 @@ a {
   right: 8%;
   font-size: 30px;
 }
+@media screen and (min-width: 413px) {
+  .button--like {
+    width: 20%;
+  }
+}
 .button--like .heart-button--empty {
   position: absolute;
   top: 2.7%;
   right: 8%;
   font-size: 30px;
+}
+@media screen and (min-width: 413px) {
+  .button--like .heart-button--empty {
+    margin-right: 100%;
+  }
 }
 .button--like .heart-button--full {
   position: absolute;
@@ -366,6 +376,11 @@ a {
   background-clip: text;
   color: transparent;
 }
+@media screen and (min-width: 413px) {
+  .button--like:hover .heart-button--full {
+    margin-right: 102.8%;
+  }
+}
 
 .picture--top-menu {
   margin: 0;
@@ -374,6 +389,7 @@ a {
 .picture--top-menu img {
   /*object-fit: cover;*/
   width: 100%;
+  max-height: 350px;
 }
 
 .introduction__container {
@@ -500,6 +516,11 @@ a {
   padding: 40px 0 0 15px;
   position: relative;
 }
+@media screen and (min-width: 413px) {
+  .a-la-francaise h1 {
+    text-align: center;
+  }
+}
 .a-la-francaise h1 .fa-regular, .a-la-francaise h1 .far {
   position: absolute;
   right: 8%;
@@ -530,6 +551,11 @@ a {
 .la-note-enchantee h1 {
   padding: 40px 0 0 15px;
   position: relative;
+}
+@media screen and (min-width: 413px) {
+  .la-note-enchantee h1 {
+    text-align: center;
+  }
 }
 .la-note-enchantee h1 .fa-regular, .la-note-enchantee h1 .far {
   position: absolute;
@@ -562,6 +588,11 @@ a {
   padding: 40px 0 0 15px;
   position: relative;
 }
+@media screen and (min-width: 413px) {
+  .la-palette-du-gout h1 {
+    text-align: center;
+  }
+}
 .la-palette-du-gout h1 .fa-regular, .la-palette-du-gout h1 .far {
   position: absolute;
   right: 8%;
@@ -592,6 +623,11 @@ a {
 .le-delice-des-sens h1 {
   padding: 40px 0 0 15px;
   position: relative;
+}
+@media screen and (min-width: 413px) {
+  .le-delice-des-sens h1 {
+    text-align: center;
+  }
 }
 .le-delice-des-sens h1 .fa-regular, .le-delice-des-sens h1 .far {
   position: absolute;
@@ -629,6 +665,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 413px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form {
@@ -674,6 +718,11 @@ header a {
   font-size: 14px;
   font-style: normal;
 }
+@media screen and (min-width: 413px) {
+  .category__card {
+    margin-left: 30%;
+  }
+}
 
 /* créer une mixin et rajouter juste le margin left*/
 .category__card--offset {
@@ -684,6 +733,11 @@ header a {
   font-weight: 100;
   font-size: 14px;
   font-style: normal;
+}
+@media screen and (min-width: 413px) {
+  .category__card--offset {
+    margin-left: 30%;
+  }
 }
 
 .fonctionnement__card {
@@ -839,6 +893,11 @@ header a {
   color: #99E2D0;
   animation: rotate 0.5s ease;
 }
+@media screen and (min-width: 413px) {
+  .entries__card--1 {
+    max-width: 500px;
+  }
+}
 .entries__card--1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -941,6 +1000,11 @@ header a {
   border-radius: 50px;
   color: #99E2D0;
   animation: rotate 0.5s ease;
+}
+@media screen and (min-width: 413px) {
+  .entries__card--2 {
+    max-width: 500px;
+  }
 }
 .entries__card--2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1045,6 +1109,11 @@ header a {
   color: #99E2D0;
   animation: rotate 0.5s ease;
 }
+@media screen and (min-width: 413px) {
+  .entries__card--3 {
+    max-width: 500px;
+  }
+}
 .entries__card--3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -1147,6 +1216,11 @@ header a {
   border-radius: 50px;
   color: #99E2D0;
   animation: rotate 0.5s ease;
+}
+@media screen and (min-width: 413px) {
+  .entries__card--4 {
+    max-width: 500px;
+  }
 }
 .entries__card--4:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1251,6 +1325,11 @@ header a {
   color: #99E2D0;
   animation: rotate 0.5s ease;
 }
+@media screen and (min-width: 413px) {
+  .dishes__card--1 {
+    max-width: 500px;
+  }
+}
 .dishes__card--1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -1353,6 +1432,11 @@ header a {
   border-radius: 50px;
   color: #99E2D0;
   animation: rotate 0.5s ease;
+}
+@media screen and (min-width: 413px) {
+  .dishes__card--2 {
+    max-width: 500px;
+  }
 }
 .dishes__card--2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1457,6 +1541,11 @@ header a {
   color: #99E2D0;
   animation: rotate 0.5s ease;
 }
+@media screen and (min-width: 413px) {
+  .dishes__card--3 {
+    max-width: 500px;
+  }
+}
 .dishes__card--3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -1559,6 +1648,11 @@ header a {
   border-radius: 50px;
   color: #99E2D0;
   animation: rotate 0.5s ease;
+}
+@media screen and (min-width: 413px) {
+  .desserts__card--1 {
+    max-width: 500px;
+  }
 }
 .desserts__card--1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1663,6 +1757,11 @@ header a {
   color: #99E2D0;
   animation: rotate 0.5s ease;
 }
+@media screen and (min-width: 413px) {
+  .desserts__card--2 {
+    max-width: 500px;
+  }
+}
 .desserts__card--2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -1766,6 +1865,11 @@ header a {
   color: #99E2D0;
   animation: rotate 0.5s ease;
 }
+@media screen and (min-width: 413px) {
+  .desserts__card--3 {
+    max-width: 500px;
+  }
+}
 .desserts__card--3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -1829,7 +1933,8 @@ header a {
 }*/
 footer {
   background-color: #353535;
-  height: 170px;
+  /*height: 170px;*/
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1837,7 +1942,9 @@ footer {
 }
 @media screen and (min-width: 413px) {
   footer {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
   }
 }
 footer h2 {
@@ -1846,14 +1953,30 @@ footer h2 {
   color: #fff;
   font-family: "Shrikhand", sans-serif;
 }
+@media screen and (min-width: 413px) {
+  footer h2 {
+    margin: 20px;
+  }
+}
 footer ul {
   margin-bottom: 0px;
   list-style: none;
   padding: 0 20px;
   color: #fff;
 }
+@media screen and (min-width: 413px) {
+  footer ul {
+    margin: 0px;
+    display: flex;
+  }
+}
 footer li {
   padding-bottom: 5px;
+}
+@media screen and (min-width: 413px) {
+  footer li {
+    margin-left: 30px;
+  }
 }
 footer a {
   color: #fff;

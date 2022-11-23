@@ -149,3 +149,12 @@ h1 {
 .desserts__container {
     @include menu-container-category  
 }
+
+.footer__container {
+   
+    @include tablette-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,13 +1,16 @@
 footer {
   background-color: $colour-footer; 
-  height: 170px;
+  /*height: 170px;*/
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 
   @include tablette-desktop {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
 }
 
   h2 {
@@ -15,6 +18,10 @@ footer {
     padding: 0px 0px 0 20px;
     color: $colour-white;
     font-family: 'Shrikhand', sans-serif;
+
+    @include tablette-desktop {
+      margin: 20px;
+    }
   }
 
   ul {
@@ -22,10 +29,19 @@ footer {
     list-style: none;
     padding: 0 20px;
     color: $colour-white;
+
+    @include tablette-desktop {
+      margin: 0px;
+      display: flex;
+    }
   }
 
   li {
     padding-bottom: 5px;
+
+    @include tablette-desktop {
+      margin-left: 30px;
+    }
   }
 
   a {
