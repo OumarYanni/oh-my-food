@@ -1,11 +1,19 @@
 {
-  "name": "vf_projet_3",
+  "name": "oh-my-food",
   "version": "1.0.0",
-  "description": "",
+  "description": "Un site pour choisir son restaurant, composer son menu et dégustez au restaurant sans attendre.",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OumarYanni/VF_projet_3.git"
+  },
+  "author": "OumarYanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OumarYanni/VF_projet_3/issues"
+  },
+  "homepage": "https://github.com/OumarYanni/VF_projet_3#readme"
 }
