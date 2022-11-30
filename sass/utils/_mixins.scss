@@ -49,13 +49,15 @@
         top: 0%;
         right: 0%;
         border: 2px solid $colour-tertiary;
-        width: 15%;
+        width: 0%;
+        transition: width 1s;
         height: 70px;
         border-radius: 0px 15px 15px 0px;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: $colour-tertiary;
+        opacity: 0;
     }
 
     .fa-regular, .far {
@@ -64,7 +66,7 @@
         border: 0px solid $colour-tertiary;
         border-radius: 50px;
         color: $colour-tertiary;
-        animation: rotate 0.5s ease;
+        /*animation: rotate 0.5s ease;*/
     }
 
     @include tablette-desktop {
@@ -73,53 +75,56 @@
 }
 
 @mixin menu-card--hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-    background-color: $colour-white;
-    width: 85%;
-    height: 60px;
-    margin: 10px 0px;
-    padding: 5px 15px 5px 15px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; 
-    position: relative;
+    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    // border-radius: 20px;
+    // background-color: $colour-white;
+    // width: 85%;
+    // height: 60px;
+    // margin: 10px 0px;
+    // padding: 5px 15px 5px 15px;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis; 
+    // position: relative;
     
-    h3 {
-    margin: 10px 0 0 0;
-    }
+    // h3 {
+    // margin: 10px 0 0 0;
+    // }
 
-    p {
-    margin: 0;
-    }
+    // p {
+    // margin: 0;
+    // }
 
     span {
         float: none;
-        position: absolute;
+        // position: absolute;
         right: 22%; 
     }
 
     figure {
-        margin: 0;
-        position: absolute;
-        top: 0%;
-        right: 0%;
-        border: 2px solid $colour-tertiary;
+        // margin: 0;
+        // position: absolute;
+        // top: 0%;
+        // right: 0%;
+        // border: 2px solid $colour-tertiary;
         width: 15%;
-        height: 70px;
-        border-radius: 0px 15px 15px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $colour-tertiary;
+        opacity: 1;
+        // height: 70px;
+        // border-radius: 0px 15px 15px 0px;
+        // display: flex;
+        transition: width 1s;
+        // justify-content: center;
+        // align-items: center;
+        // background-color: $colour-tertiary;
     }
 
     .fa-regular, .far {
-        font-size: 20px;
+        /*font-size: 20px;
         background-color: white;
         border: 0px solid $colour-tertiary;
         border-radius: 50px;
-        color: $colour-tertiary;
+        color: $colour-tertiary;*/
+        animation: rotate 0.5s ease;
     }
 }
 

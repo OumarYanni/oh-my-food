@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*L'intégration des polices (Roboto et Shrikhand) avec google fonts APIs*/
+@import url("https://fonts.googleapis.com/css?family=Roboto|Shrikhand");
 /*$box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.38);*/
 /*$background-colour-button--hover :  background: rgb(197,122,224);
 background: linear-gradient(73deg, rgba(197,122,224,1) 0%, rgba(224,131,224,1) 95%);*/
@@ -126,7 +128,7 @@ body {
   margin: 0 auto;
   position: relative;
   /*max-width: 1200px auto;*/
-  max-width: 1000px;
+  max-width: 1400px;
 }
 
 .preloader {
@@ -387,7 +389,7 @@ a {
   /*position: absolute;*/
 }
 .picture--top-menu img {
-  /*object-fit: cover;*/
+  object-fit: cover;
   width: 100%;
   max-height: 350px;
 }
@@ -877,13 +879,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .entries__card--1 .fa-regular, .entries__card--1 .far {
   font-size: 20px;
@@ -891,57 +895,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .entries__card--1 {
     max-width: 500px;
   }
 }
-.entries__card--1:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.entries__card--1:hover h3 {
-  margin: 10px 0 0 0;
-}
-.entries__card--1:hover p {
-  margin: 0;
-}
 .entries__card--1:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .entries__card--1:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .entries__card--1:hover .fa-regular, .entries__card--1:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .entries__card--2 {
@@ -985,13 +961,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .entries__card--2 .fa-regular, .entries__card--2 .far {
   font-size: 20px;
@@ -999,57 +977,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .entries__card--2 {
     max-width: 500px;
   }
 }
-.entries__card--2:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.entries__card--2:hover h3 {
-  margin: 10px 0 0 0;
-}
-.entries__card--2:hover p {
-  margin: 0;
-}
 .entries__card--2:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .entries__card--2:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .entries__card--2:hover .fa-regular, .entries__card--2:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .entries__card--3 {
@@ -1093,13 +1043,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .entries__card--3 .fa-regular, .entries__card--3 .far {
   font-size: 20px;
@@ -1107,57 +1059,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .entries__card--3 {
     max-width: 500px;
   }
 }
-.entries__card--3:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.entries__card--3:hover h3 {
-  margin: 10px 0 0 0;
-}
-.entries__card--3:hover p {
-  margin: 0;
-}
 .entries__card--3:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .entries__card--3:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .entries__card--3:hover .fa-regular, .entries__card--3:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .entries__card--4 {
@@ -1201,13 +1125,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .entries__card--4 .fa-regular, .entries__card--4 .far {
   font-size: 20px;
@@ -1215,57 +1141,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .entries__card--4 {
     max-width: 500px;
   }
 }
-.entries__card--4:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.entries__card--4:hover h3 {
-  margin: 10px 0 0 0;
-}
-.entries__card--4:hover p {
-  margin: 0;
-}
 .entries__card--4:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .entries__card--4:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .entries__card--4:hover .fa-regular, .entries__card--4:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .dishes__card--1 {
@@ -1309,13 +1207,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .dishes__card--1 .fa-regular, .dishes__card--1 .far {
   font-size: 20px;
@@ -1323,57 +1223,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .dishes__card--1 {
     max-width: 500px;
   }
 }
-.dishes__card--1:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.dishes__card--1:hover h3 {
-  margin: 10px 0 0 0;
-}
-.dishes__card--1:hover p {
-  margin: 0;
-}
 .dishes__card--1:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .dishes__card--1:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .dishes__card--1:hover .fa-regular, .dishes__card--1:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .dishes__card--2 {
@@ -1417,13 +1289,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .dishes__card--2 .fa-regular, .dishes__card--2 .far {
   font-size: 20px;
@@ -1431,57 +1305,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .dishes__card--2 {
     max-width: 500px;
   }
 }
-.dishes__card--2:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.dishes__card--2:hover h3 {
-  margin: 10px 0 0 0;
-}
-.dishes__card--2:hover p {
-  margin: 0;
-}
 .dishes__card--2:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .dishes__card--2:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .dishes__card--2:hover .fa-regular, .dishes__card--2:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .dishes__card--3 {
@@ -1525,13 +1371,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .dishes__card--3 .fa-regular, .dishes__card--3 .far {
   font-size: 20px;
@@ -1539,57 +1387,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .dishes__card--3 {
     max-width: 500px;
   }
 }
-.dishes__card--3:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.dishes__card--3:hover h3 {
-  margin: 10px 0 0 0;
-}
-.dishes__card--3:hover p {
-  margin: 0;
-}
 .dishes__card--3:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .dishes__card--3:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .dishes__card--3:hover .fa-regular, .dishes__card--3:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .desserts__card--1 {
@@ -1633,13 +1453,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .desserts__card--1 .fa-regular, .desserts__card--1 .far {
   font-size: 20px;
@@ -1647,57 +1469,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .desserts__card--1 {
     max-width: 500px;
   }
 }
-.desserts__card--1:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.desserts__card--1:hover h3 {
-  margin: 10px 0 0 0;
-}
-.desserts__card--1:hover p {
-  margin: 0;
-}
 .desserts__card--1:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .desserts__card--1:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .desserts__card--1:hover .fa-regular, .desserts__card--1:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .desserts__card--2 {
@@ -1741,13 +1535,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .desserts__card--2 .fa-regular, .desserts__card--2 .far {
   font-size: 20px;
@@ -1755,57 +1551,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .desserts__card--2 {
     max-width: 500px;
   }
 }
-.desserts__card--2:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.desserts__card--2:hover h3 {
-  margin: 10px 0 0 0;
-}
-.desserts__card--2:hover p {
-  margin: 0;
-}
 .desserts__card--2:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .desserts__card--2:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .desserts__card--2:hover .fa-regular, .desserts__card--2:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 .desserts__card--3 {
@@ -1849,13 +1617,15 @@ header a {
   top: 0%;
   right: 0%;
   border: 2px solid #99E2D0;
-  width: 15%;
+  width: 0%;
+  transition: width 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
+  opacity: 0;
 }
 .desserts__card--3 .fa-regular, .desserts__card--3 .far {
   font-size: 20px;
@@ -1863,57 +1633,29 @@ header a {
   border: 0px solid #99E2D0;
   border-radius: 50px;
   color: #99E2D0;
-  animation: rotate 0.5s ease;
+  /*animation: rotate 0.5s ease;*/
 }
 @media screen and (min-width: 413px) {
   .desserts__card--3 {
     max-width: 500px;
   }
 }
-.desserts__card--3:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  background-color: #fff;
-  width: 85%;
-  height: 60px;
-  margin: 10px 0px;
-  padding: 5px 15px 5px 15px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-.desserts__card--3:hover h3 {
-  margin: 10px 0 0 0;
-}
-.desserts__card--3:hover p {
-  margin: 0;
-}
 .desserts__card--3:hover span {
   float: none;
-  position: absolute;
   right: 22%;
 }
 .desserts__card--3:hover figure {
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  border: 2px solid #99E2D0;
   width: 15%;
-  height: 70px;
-  border-radius: 0px 15px 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
+  opacity: 1;
+  transition: width 1s;
 }
 .desserts__card--3:hover .fa-regular, .desserts__card--3:hover .far {
-  font-size: 20px;
+  /*font-size: 20px;
   background-color: white;
-  border: 0px solid #99E2D0;
+  border: 0px solid $colour-tertiary;
   border-radius: 50px;
-  color: #99E2D0;
+  color: $colour-tertiary;*/
+  animation: rotate 0.5s ease;
 }
 
 /*.dishes__card {
