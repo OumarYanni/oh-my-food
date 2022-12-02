@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*L'intégration des polices (Roboto et Shrikhand) avec google fonts APIs*/
 @import url("https://fonts.googleapis.com/css?family=Roboto|Shrikhand");
 /*$box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.38);*/
 /*$background-colour-button--hover :  background: rgb(197,122,224);
@@ -880,7 +879,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -903,8 +902,8 @@ header a {
   }
 }
 .entries__card--1:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .entries__card--1:hover figure {
   width: 15%;
@@ -962,7 +961,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -985,8 +984,8 @@ header a {
   }
 }
 .entries__card--2:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .entries__card--2:hover figure {
   width: 15%;
@@ -1044,7 +1043,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1067,8 +1066,8 @@ header a {
   }
 }
 .entries__card--3:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .entries__card--3:hover figure {
   width: 15%;
@@ -1126,7 +1125,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1149,8 +1148,8 @@ header a {
   }
 }
 .entries__card--4:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .entries__card--4:hover figure {
   width: 15%;
@@ -1208,7 +1207,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1231,8 +1230,8 @@ header a {
   }
 }
 .dishes__card--1:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .dishes__card--1:hover figure {
   width: 15%;
@@ -1290,7 +1289,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1313,8 +1312,8 @@ header a {
   }
 }
 .dishes__card--2:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .dishes__card--2:hover figure {
   width: 15%;
@@ -1372,7 +1371,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1395,8 +1394,8 @@ header a {
   }
 }
 .dishes__card--3:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .dishes__card--3:hover figure {
   width: 15%;
@@ -1454,7 +1453,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1477,8 +1476,8 @@ header a {
   }
 }
 .desserts__card--1:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .desserts__card--1:hover figure {
   width: 15%;
@@ -1536,7 +1535,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1559,8 +1558,8 @@ header a {
   }
 }
 .desserts__card--2:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .desserts__card--2:hover figure {
   width: 15%;
@@ -1618,7 +1617,7 @@ header a {
   right: 0%;
   border: 2px solid #99E2D0;
   width: 0%;
-  transition: width 1s;
+  transition: width 1s, opacity 1s;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -1641,8 +1640,8 @@ header a {
   }
 }
 .desserts__card--3:hover span {
-  float: none;
   right: 22%;
+  transition: right 1.5s;
 }
 .desserts__card--3:hover figure {
   width: 15%;

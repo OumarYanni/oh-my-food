@@ -50,7 +50,7 @@
         right: 0%;
         border: 2px solid $colour-tertiary;
         width: 0%;
-        transition: width 1s;
+        transition: width 1s, opacity 1s;
         height: 70px;
         border-radius: 0px 15px 15px 0px;
         display: flex;
@@ -96,9 +96,10 @@
     // }
 
     span {
-        float: none;
+        // float: none;
         // position: absolute;
         right: 22%; 
+        transition: right 1.5s;
     }
 
     figure {
